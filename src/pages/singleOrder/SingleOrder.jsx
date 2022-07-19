@@ -1,19 +1,42 @@
+
+import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import "./singleOrder.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
-import Chart from "../../components/chart/Chart";
 import List from "./status_history/Table";
-import TextField from '@mui/material/TextField';
+import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Radio from '@mui/material/Radio';
+
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormHelperText from '@mui/material/FormHelperText';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const SingleOrder = () => {
 
   const location = useLocation()
   const { orderID } = location.state
 
-var selectedValue = "a"
-  // const [selectedValue, setSelectedValue] = useState(true)
+  // var selectedValue = "a"
+  const [selectedValue, setSelectedValue] = useState("a")
+  const [customer_Comment, setCustomer_Comment] = useState("")
+  const [assignedDriver, setassignedDriver] = useState('');
+
+  const [currentProductStatus, setcurrentProductStatus] = useState('');
+
+  const handleChange = (event) => {
+    setassignedDriver(event.target.value);
+  };
+
+  const handleChangeStatus = (event) => {
+    setcurrentProductStatus(event.target.value);
+
+    console.log("currentProductStatus", currentProductStatus)
+  };
+
+
 
   console.log("orderID-->", orderID)
   return (
@@ -31,25 +54,45 @@ var selectedValue = "a"
             <div className="item">
               <div className="details">
                 <div className="statusdetailItem">
-                  <span className="itemKey">Order Status</span>
-                  <span className="pending">Pending</span>
+                  <FormControl sx={{ minWidth: 200, }}>
+                    <InputLabel id="demo-simple-select-helper-label">Current Order Status</InputLabel>
+                    <Select
+                      labelId="demo-simple-select-helper-label"
+                      id="demo-simple-select-helper"
+                      value={currentProductStatus}
+                      label="Current Order Status"
+                      onChange={handleChangeStatus}
+                    >
+
+                      <MenuItem value={"pending"}> pending </MenuItem>
+                      <MenuItem value={"confirmed"}> Confirmed </MenuItem>
+                      <MenuItem value={"deliveryassign"}> Delivery Assign </MenuItem>
+                      <MenuItem value={"ontheway"}> On the way </MenuItem>
+                      <MenuItem value={"completed"}> Completed </MenuItem>
+                    </Select>
+                  </FormControl>
+
                 </div>
                 <div className="detailItem">
                   <span className="itemKey">Customer Order Comment</span>
                 </div>
                 <div className="statusdetailItem">
-                  <TextField
-                    id="standard-helperText"
-                    defaultValue="Default Value"
-                    variant="standard"
+                  <TextareaAutosize
+                    aria-label="minimum height"
+                    minRows={2}
+                    placeholder="Comments"
+                    style={{ width: 500 }}
+                    value={customer_Comment}
+                    onChange={(e) => { setCustomer_Comment(e.target.value) }}
                   />
+
                 </div>
 
                 <div className="statusdetailItem">
                   <span className="itemKey">Notify Customer</span>
                   <Radio
                     checked={selectedValue === 'a'}
-                    // onChange={handleChange}
+                    onChange={() => setSelectedValue("a")}
                     value="a"
                     name="radio-buttons"
                     inputProps={{ 'aria-label': 'A' }}
@@ -57,7 +100,7 @@ var selectedValue = "a"
                   <span className="itemValue">Yes</span>
                   <Radio
                     checked={selectedValue === 'b'}
-                    // onChange={handleChange}
+                    onChange={() => setSelectedValue("b")}
                     value="b"
                     name="radio-buttons"
                     inputProps={{ 'aria-label': 'B' }}
@@ -72,6 +115,25 @@ var selectedValue = "a"
             <h1 className="title">Delivery partner</h1>
             <div className="item">
               <div className="details">
+
+                <FormControl sx={{ minWidth: 200, marginBottom: 2 }}
+                  disabled={currentProductStatus === "deliveryassign" ? false : true}
+                >
+                  <InputLabel id="demo-simple-select-helper-label">Online drivers</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-helper-label"
+                    id="demo-simple-select-helper"
+                    value={assignedDriver}
+                    label="Online driver"
+                    onChange={handleChange}
+                  >
+
+                    <MenuItem value={10}>lara (lara@yopmail.com)</MenuItem>
+                    <MenuItem value={20}>Angie (angie@yopmail.com)</MenuItem>
+                    <MenuItem value={30}>Big Jim (bigjim@yopmail.com) </MenuItem>
+                  </Select>
+                </FormControl>
+
                 <div className="detailItem">
                   <span className="itemKey">Name:</span>
                   <span className="itemValue">Jane Doe</span>
