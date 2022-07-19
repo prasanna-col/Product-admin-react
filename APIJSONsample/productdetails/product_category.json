@@ -1,0 +1,32 @@
+{
+    "product_catogory": [
+        {
+            "categoty_id":1,
+            "categoty_name":"Men's fashion"
+        },
+        {
+            "categoty_id":2,
+            "categoty_name":"Women's fashion"
+        },
+        {
+            "categoty_id":3,
+            "categoty_name":"Elecronics"
+        },
+        {
+            "categoty_id":5,
+            "categoty_name":"Beauty"
+        },
+        {
+            "categoty_id":6,
+            "categoty_name":"Toys"
+        },
+        {
+            "categoty_id":7,
+            "categoty_name":"Mobiles"
+        },
+        {
+            "categoty_id":8,
+            "categoty_name":"Appliances"
+        }
+    ]
+}

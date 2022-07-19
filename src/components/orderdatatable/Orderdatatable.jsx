@@ -15,7 +15,7 @@ const Orderdatatable = () => {
     {
       field: "action",
       headerName: "Action",
-      width: 200,
+      width: 120,
       renderCell: (params) => {
         return (
           <div className="cellAction">

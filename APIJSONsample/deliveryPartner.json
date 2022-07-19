@@ -1,0 +1,13 @@
+{
+    "driverDetails":[
+        {
+            "name":"Jeo",
+            "mobile_number":"89903323xx",
+            "createdAt":"14-07-2021", // time Stamp
+            "driverId":12,
+            "deviceId":"3tg8sd76247fgw76tfagf76qfgf--",
+            "accountStatus":1, // 1 -- active 0 -- deactive
+            "permanantAddress":"street city country"
+        }
+    ]
+}

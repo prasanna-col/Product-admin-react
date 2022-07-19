@@ -1,0 +1,12 @@
+{
+    "customer_info":[
+        {
+            "name":"Alan",
+            "mobile_number":"89900923xx",
+            "createdAt":"18-07-2021", // time Stamp
+            "customerId":12,
+            "deviceId":"3tg8sd76247fgw76tfagf76qfgf--",
+            "accountStatus":1, // 1 -- active 0 -- deactive
+        }
+    ]
+}

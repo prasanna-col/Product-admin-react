@@ -1,0 +1,28 @@
+{
+    "products":[
+        {
+            "product_id": 18,
+            "product_name": "chair",
+            "product_category": "Appliances",
+            "product_category_id":8,
+            "product_type": "premium",
+            "available_qty": 2500,
+            "price":1500,
+            "offer_price":1250,
+            "offer_status":0,
+            "offer_startDate":"",
+            "offer_endDate":"",
+            "product_img":[
+                {
+                    "url":"https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29mYSUyMGNoYWlyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                },
+                {
+                    "url":"https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29mYSUyMGNoYWlyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                },
+                {
+                    "url":"https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29mYSUyMGNoYWlyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                }
+            ]
+        }
+    ]
+}

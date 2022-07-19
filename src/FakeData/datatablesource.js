@@ -30,6 +30,12 @@ export const userColumns = [
     width: 120,
   },
   {
+    field: "orderamount",
+    headerName: "Order Amount",
+    width: 120,
+  },
+  
+  {
     field: "status",
     headerName: "Status",
     width: 160,
@@ -53,7 +59,8 @@ export const userRows = [
     status: "pending",
     email: "1snow@gmail.com",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 2,
@@ -63,7 +70,8 @@ export const userRows = [
     email: "2snow@gmail.com",
     status: "confirmed",
     payment: "Online",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 3,
@@ -73,7 +81,8 @@ export const userRows = [
     email: "3snow@gmail.com",
     status: "pending",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 4,
@@ -83,7 +92,8 @@ export const userRows = [
     email: "4snow@gmail.com",
     status: "pending",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 5,
@@ -93,7 +103,8 @@ export const userRows = [
     email: "5snow@gmail.com",
     status: "confirmed",
     payment: "Online",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 6,
@@ -103,7 +114,8 @@ export const userRows = [
     email: "6snow@gmail.com",
     status: "ontheway",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 7,
@@ -113,7 +125,8 @@ export const userRows = [
     email: "7snow@gmail.com",
     status: "confirmed",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 8,
@@ -123,7 +136,8 @@ export const userRows = [
     email: "8snow@gmail.com",
     status: "ontheway",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 9,
@@ -133,7 +147,8 @@ export const userRows = [
     email: "snow@gmail.com",
     status: "pending",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 10,
@@ -143,7 +158,8 @@ export const userRows = [
     email: "snow@gmail.com",
     status: "ontheway",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 11,
@@ -153,7 +169,8 @@ export const userRows = [
     email: "snow@gmail.com",
     status: "completed",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
   {
     id: 12,
@@ -163,7 +180,8 @@ export const userRows = [
     email: "snow@gmail.com",
     status: "completed",
     payment: "COD",
-    ordertype: "Delivery"
+    ordertype: "Delivery",
+    orderamount: "$ 24.00"
   },
 
 ];

@@ -1,0 +1,55 @@
+{
+    "product_sub_category": [
+        {
+            "sub_category_id": 1,
+            "sub_category_set": [
+                {
+                    "size": "S"
+                },
+                {
+                    "size": "M"
+                },
+                {
+                    "size": "L"
+                },
+                {
+                    "size": "XL"
+                },
+                {
+                    "size": "XXL"
+                },
+                {
+                    "size": "XXXL"
+                }
+            ]
+        },
+        {
+            "sub_category_id": 2,
+            "sub_category_set": [
+                {
+                    "type": "half"
+                },
+                {
+                    "type": "full"
+                }
+            ]
+        },
+        {
+            "sub_category_id": 3,
+            "sub_category_set": [
+                {
+                    "type": "low"
+                },
+                {
+                    "type": "medium"
+                },
+                {
+                    "type": "high"
+                },
+                {
+                    "type": "premium"
+                }
+            ]
+        }
+    ]
+}
