@@ -19,8 +19,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
+
             <Route index element={<Home />} />
+
             <Route path="login" element={<Login />} />
+
             <Route path="users">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
@@ -29,6 +32,7 @@ function App() {
                 element={<New inputs={userInputs} title="Add New User" />}
               />
             </Route>
+
             <Route path="products">
               <Route index element={<List />} />
               <Route path=":productId" element={<Single />} />
