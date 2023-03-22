@@ -2,9 +2,11 @@ import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { AppContext } from "../../context"
 const Datatable = () => {
+  const { userId } = useContext(AppContext)
+  console.log("userId", userId)
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
